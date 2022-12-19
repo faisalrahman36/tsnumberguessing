@@ -1,17 +1,24 @@
 {
-  "name": "tsnumberguessing",
-  "version": "1.0.0",
+  "name": "tsfslnumberguessing",
+  "version": "1.0.5",
   "description": "",
-  "main": "index.js",
+  "main": "./random.js",
+  "bin": {
+    "tsfslnumberguessing": "./bin/index.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^18.11.17",
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "esm": "^3.2.25",
+    "nodenext": "^0.0.2",
     "prompt-sync": "^4.2.0"
   }
 }

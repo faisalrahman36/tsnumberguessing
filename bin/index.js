@@ -1,12 +1,8 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-const prompt_sync_1 = __importDefault(require("prompt-sync"));
-const random_1 = __importDefault(require("../random"));
-const prompt = (0, prompt_sync_1.default)();
-const target = (0, random_1.default)(0, 10000);
+#!/usr/bin/env node
+import promptSync from 'prompt-sync';
+import getRandomInt from '../random.js';
+const prompt = promptSync();
+const target = getRandomInt(0, 10000);
 console.log("Let's start the number guessing game.");
 const number = prompt('Enter an integer between 0 and 10000  :');
 const guess = parseInt(number);

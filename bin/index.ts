@@ -1,5 +1,6 @@
+#!/usr/bin/env node
 import promptSync from 'prompt-sync';
-import getRandomInt from '../random'
+import getRandomInt from '../random.js'
 const prompt = promptSync();
 
 const target=getRandomInt(0,10000);
